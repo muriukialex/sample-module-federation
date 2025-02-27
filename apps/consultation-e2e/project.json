@@ -1,0 +1,9 @@
+{
+  "name": "consultation-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/consultation-e2e/src",
+  "implicitDependencies": ["consultation"],
+  "// targets": "to see all targets run: nx show project consultation-e2e --web",
+  "targets": {}
+}
