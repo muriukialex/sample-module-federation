@@ -1,0 +1,26 @@
+<!-- This is a dummy datatable component -->
+<table
+  class="table-fixed w-full border-collapse border border-gray-300 shadow-lg"
+>
+  <thead>
+    <tr class="bg-gray-200 text-gray-700 uppercase text-sm">
+      <th
+        class="border border-gray-300 px-4 py-2 text-left"
+        *ngFor="let header of tableHeader"
+      >
+        {{ header }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let item of data; index as i"
+      [ngClass]="{ 'bg-gray-100': i % 2 === 0, 'bg-white': i % 2 !== 0 }"
+      class="hover:bg-gray-300 transition duration-200"
+    >
+      <td class="border border-gray-300 px-4 py-2">{{ item.name }}</td>
+      <td class="border border-gray-300 px-4 py-2">{{ item.phone_number }}</td>
+      <td class="border border-gray-300 px-4 py-2">{{ item.email }}</td>
+    </tr>
+  </tbody>
+</table>

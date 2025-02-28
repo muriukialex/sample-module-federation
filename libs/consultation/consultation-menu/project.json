@@ -1,0 +1,36 @@
+{
+  "name": "consultation-menu",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/consultation/consultation-menu/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/consultation/consultation-menu/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/consultation/consultation-menu/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/consultation/consultation-menu/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/consultation/consultation-menu/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

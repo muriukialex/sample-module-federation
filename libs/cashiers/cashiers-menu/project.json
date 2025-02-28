@@ -1,0 +1,36 @@
+{
+  "name": "cashiers-menu",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cashiers/cashiers-menu/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/cashiers/cashiers-menu/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/cashiers/cashiers-menu/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/cashiers/cashiers-menu/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/cashiers/cashiers-menu/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

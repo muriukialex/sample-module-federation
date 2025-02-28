@@ -1,14 +1,21 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { ConsultationMenuComponent } from '@advantage-lite/consultation-menu';
+import { SilNavbarComponent } from '@advantage-lite/sil-navbar';
 import { RemoteEntryComponent } from './entry.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { remoteRoutes } from './entry.routes';
+import { NxWelcomeComponent } from './nx-welcome.component';
 
 @NgModule({
   declarations: [RemoteEntryComponent, NxWelcomeComponent],
-  imports: [CommonModule, RouterModule.forChild(remoteRoutes)],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(remoteRoutes),
+    ConsultationMenuComponent,
+    SilNavbarComponent,
+  ],
   providers: [],
 })
 export class RemoteEntryModule {}

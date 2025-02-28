@@ -1,10 +1,11 @@
+import { CashiersMenuComponent } from '@advantage-lite/cashiers-menu';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+// import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
@@ -19,8 +20,9 @@ import { AppComponent } from './app.component';
       ],
       { initialNavigation: 'enabledBlocking' }
     ),
+    CashiersMenuComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [],
 })
 export class AppModule {}
