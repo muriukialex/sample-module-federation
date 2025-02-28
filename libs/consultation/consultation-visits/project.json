@@ -1,0 +1,36 @@
+{
+  "name": "consultation-visits",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/consultation/consultation-visits/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/consultation/consultation-visits/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/consultation/consultation-visits/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/consultation/consultation-visits/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/consultation/consultation-visits/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

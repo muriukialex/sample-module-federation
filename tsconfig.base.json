@@ -15,11 +15,29 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@advantage-lite/cashiers-home": [
+        "libs/cashiers/cashiers-home/src/index.ts"
+      ],
       "@advantage-lite/cashiers-menu": [
         "libs/cashiers/cashiers-menu/src/index.ts"
       ],
+      "@advantage-lite/cashiers-queues": [
+        "libs/cashiers/cashiers-queues/src/index.ts"
+      ],
+      "@advantage-lite/cashiers-visits": [
+        "libs/cashiers/cashiers-visits/src/index.ts"
+      ],
+      "@advantage-lite/consultation-home": [
+        "libs/consultation/consultation-home/src/index.ts"
+      ],
       "@advantage-lite/consultation-menu": [
         "libs/consultation/consultation-menu/src/index.ts"
+      ],
+      "@advantage-lite/consultation-queues": [
+        "libs/consultation/consultation-queues/src/index.ts"
+      ],
+      "@advantage-lite/consultation-visits": [
+        "libs/consultation/consultation-visits/src/index.ts"
       ],
       "@advantage-lite/login": ["libs/auth/login/src/index.ts"],
       "@advantage-lite/not-found": ["libs/auth/not-found/src/index.ts"],
