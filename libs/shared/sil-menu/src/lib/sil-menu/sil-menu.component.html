@@ -2,7 +2,12 @@
   <nav>
     <ul class="flex justify-between my-4 p-8">
       <li class="mb-2" *ngFor="let item of menuItems">
-        <a [routerLink]="[item.link]" class="block">{{ item.name }}</a>
+        <a
+          [routerLink]="[item.link]"
+          routerLinkActive="underline"
+          class="block"
+          >{{ item.name }}</a
+        >
       </li>
     </ul>
   </nav>

@@ -1,43 +1,81 @@
 <div class="flex flex-col h-screen p-10">
-  <h1 class="text-2xl font-bold">Select an application</h1>
-  <p class="text-gray-700 mb-8">Select an application to proceed.</p>
-
-  <div class="flex gap-8">
-    <div
-      class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-6"
-    >
-      <h2 class="text-xl font-bold text-gray-800">Cashier</h2>
-      <p class="text-gray-600 mt-2">
-        This is a description of the product or item. It provides useful
-        details.
-      </p>
-
-      <div class="mt-4">
-        <button
-          [routerLink]="'/cashier/home'"
-          class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-        >
-          Select
-        </button>
+  <div class="flex justify-between items-center">
+    <div>
+      <h1 class="text-2xl font-bold">Select an application</h1>
+      <p class="text-gray-700 mb-8">Select an application to proceed.</p>
+    </div>
+    <div>
+      <div>
+        <button [routerLink]="'/login'">Logout</button>
       </div>
     </div>
+  </div>
 
-    <div
-      class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-6"
-    >
-      <h2 class="text-xl font-bold text-gray-800">Consultation</h2>
-      <p class="text-gray-600 mt-2">
-        This is a description of the product or item. It provides useful
-        details.
-      </p>
+  <div class="mb-6">
+    <div class="text-gray-400 my-4">Clinical apps</div>
+    <hr />
+    <div class="flex gap-8 mt-4">
+      <div
+        class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-6"
+      >
+        <h2 class="text-xl font-bold text-gray-800">Cashier</h2>
+        <p class="text-gray-600 mt-2">
+          This is a description of the product or item. It provides useful
+          details.
+        </p>
 
-      <div class="mt-4">
-        <button
-          [routerLink]="'/consultation/home'"
-          class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-        >
-          Select
-        </button>
+        <div class="mt-4">
+          <button
+            [routerLink]="'/cashier/home'"
+            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-6"
+      >
+        <h2 class="text-xl font-bold text-gray-800">Consultation</h2>
+        <p class="text-gray-600 mt-2">
+          This is a description of the product or item. It provides useful
+          details.
+        </p>
+
+        <div class="mt-4">
+          <button
+            [routerLink]="'/consultation/home'"
+            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-6">
+    <div class="text-gray-400 my-4">Financial applications</div>
+    <hr />
+    <div class="flex gap-8 mt-4">
+      <div
+        class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-6"
+      >
+        <h2 class="text-xl font-bold text-gray-800">Inventory</h2>
+        <p class="text-gray-600 mt-2">
+          This is a description of the product or item. It provides useful
+          details.
+        </p>
+
+        <div class="mt-4">
+          <button
+            [routerLink]="'/cashier/home'"
+            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          >
+            Select
+          </button>
+        </div>
       </div>
     </div>
   </div>
