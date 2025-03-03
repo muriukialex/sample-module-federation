@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve host"
+    "start": "nx serve host",
+    "start:cashier": "nx serve host --open --devRemotes='cashier'",
+    "start:consultation": "nx serve host --open --devRemotes='consultation'",
+    "build": "nx run-many –target=build –all",
+    "build:cashier": "nx run cashier:build",
+    "build:consultation": "nx run consultation:build"
   },
   "private": true,
   "devDependencies": {
