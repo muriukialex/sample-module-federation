@@ -4,9 +4,11 @@
     <h1 class="text-4xl font-bold">Cashier's playground!</h1>
 
     <div class="mt-6">
-      <button class="p-4 bg-gray-400" (click)="simulatePostRequest()">
-        Click here
-      </button>
+      <lib-sil-button
+        buttonText="Click here"
+        [classList]="'text-black'"
+        (clickEvent)="simulatePostRequest()"
+      ></lib-sil-button>
     </div>
   </div>
 </div>

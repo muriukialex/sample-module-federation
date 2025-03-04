@@ -54,6 +54,7 @@
       "@advantage-lite/sil-menu": ["libs/shared/sil-menu/src/index.ts"],
       "@advantage-lite/sil-navbar": ["libs/shared/sil-navbar/src/index.ts"],
       "@advantage-lite/sil-tokens": ["libs/shared/sil-tokens/src/index.ts"],
+      "@sil-button/sil-button": ["libs/shared/ui/sil-button/src/index.ts"],
       "@sil-datatable/sil-datatable": [
         "libs/shared/sil-datatable/components/sil-datatable/src/index.ts"
       ],
