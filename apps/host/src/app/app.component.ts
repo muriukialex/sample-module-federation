@@ -1,6 +1,6 @@
+import { MenuItem } from '@advantage-lite/sil-interfaces';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuItem } from './interfaces/menu-items.interface';
 import { MenuService } from './lib/services/menu.service';
 
 @Component({

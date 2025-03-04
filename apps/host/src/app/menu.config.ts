@@ -1,4 +1,5 @@
-import { AppMenuConfig } from './interfaces/menu-items.interface';
+// import { AppMenuConfig } from './interfaces/menu-items.interface';
+import { AppMenuConfig } from '@advantage-lite/sil-interfaces';
 
 export const MENU_CONFIG: AppMenuConfig = {
   cashier: [
