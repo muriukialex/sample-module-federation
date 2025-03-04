@@ -6,7 +6,7 @@
     </div>
     <div>
       <div>
-        <button [routerLink]="'/login'">Logout</button>
+        <button uiSref="app.login">Logout</button>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
 
         <div class="mt-4">
           <button
-            [routerLink]="'/cashier/home'"
+            uiSref="app.cashier.home"
             class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >
             Select
@@ -45,7 +45,7 @@
 
         <div class="mt-4">
           <button
-            [routerLink]="'/consultation/home'"
+            uiSref="app.consultation.home"
             class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >
             Select
@@ -70,7 +70,7 @@
 
         <div class="mt-4">
           <button
-            [routerLink]="'/cashier/home'"
+            uiSref="app.consultation.home"
             class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >
             Select

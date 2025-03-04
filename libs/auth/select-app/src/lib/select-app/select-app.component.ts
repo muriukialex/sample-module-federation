@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { UIRouterModule } from '@uirouter/angular';
 
 @Component({
   selector: 'lib-select-app',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, UIRouterModule],
   templateUrl: './select-app.component.html',
   styleUrl: './select-app.component.css',
 })

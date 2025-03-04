@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
+import { UIRouterModule } from '@uirouter/angular';
 
 @Component({
   selector: 'lib-login',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, UIRouterModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
