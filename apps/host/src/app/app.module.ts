@@ -4,16 +4,31 @@ import { SelectAppComponent } from '@advantage-lite/select-app';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { Category, UIRouter, UIRouterModule } from '@uirouter/angular';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
+import { APP_STATES } from './app.states';
 import { NxWelcomeComponent } from './nx-welcome.component';
+
+export function routerConfigFn(router: UIRouter) {
+  router.trace.enable(Category.TRANSITION);
+  // router.plugin(Visualizer);
+}
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
+    /**
+     * Replace @angular/router in favor of @uirouter/angular
+     */
+    // RouterModule.forRoot(appRoutes),
+    UIRouterModule,
+    UIRouterModule.forRoot({
+      states: APP_STATES,
+      useHash: false,
+      initial: { state: 'app.login' },
+      config: routerConfigFn,
+    }),
     NotFoundComponent,
     LoginComponent,
     SelectAppComponent,

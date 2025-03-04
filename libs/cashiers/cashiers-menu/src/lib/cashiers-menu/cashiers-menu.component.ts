@@ -12,19 +12,19 @@ export class CashiersMenuComponent {
   cashierMenuItems = [
     {
       name: 'Home',
-      link: 'home',
+      state: 'app.cashier.home',
     },
     {
       name: 'Patients',
-      link: 'patients',
+      state: 'app.cashier.patients',
     },
     {
       name: 'Visits',
-      link: 'visits',
+      state: 'app.cashier.visits',
     },
     {
       name: 'Queues',
-      link: 'queues',
+      state: 'app.cashier.queues',
     },
   ];
 }

@@ -1,9 +1,9 @@
 <header class="bg-gray-900 text-white py-3 px-6 shadow-md flex justify-between">
   <div class="flex justify-between items-center">
-    <button class="mr-4" [routerLink]="['/select-apps']">←</button>
+    <button class="mr-4" uiSref="app.selectApps">←</button>
     <h1 class="text-lg">{{ appTitle }}</h1>
   </div>
   <div>
-    <button [routerLink]="'/login'">Logout</button>
+    <button uiSref="app.login">Logout</button>
   </div>
 </header>

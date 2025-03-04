@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve host",
-    "start:cashier": "nx serve host --open --devRemotes='cashier'",
+    "start:cashier": "NX_DAEMON=false nx serve host --open --devRemotes='cashier'",
     "start:consultation": "nx serve host --open --devRemotes='consultation'",
     "build": "nx run-many --target=build --all",
     "build:cashier": "nx run cashier:build",
@@ -89,6 +89,7 @@
     "@angular/platform-browser-dynamic": "~19.1.0",
     "@angular/router": "~19.1.0",
     "@nx/angular": "^20.4.6",
+    "@uirouter/angular": "^16.0.0",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   }

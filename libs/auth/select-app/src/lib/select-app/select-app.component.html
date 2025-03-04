@@ -6,7 +6,10 @@
     </div>
     <div>
       <div>
-        <button [routerLink]="'/login'">Logout</button>
+        <lib-sil-button
+          buttonText="Logout"
+          finalState="app.login"
+        ></lib-sil-button>
       </div>
     </div>
   </div>
@@ -25,12 +28,10 @@
         </p>
 
         <div class="mt-4">
-          <button
-            [routerLink]="'/cashier/home'"
-            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-          >
-            Select
-          </button>
+          <lib-sil-button
+            buttonText="Select"
+            finalState="app.cashier.home"
+          ></lib-sil-button>
         </div>
       </div>
 
@@ -44,12 +45,10 @@
         </p>
 
         <div class="mt-4">
-          <button
-            [routerLink]="'/consultation/home'"
-            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-          >
-            Select
-          </button>
+          <lib-sil-button
+            buttonText="Select"
+            finalState="app.consultation.home"
+          ></lib-sil-button>
         </div>
       </div>
     </div>
@@ -69,12 +68,10 @@
         </p>
 
         <div class="mt-4">
-          <button
-            [routerLink]="'/cashier/home'"
-            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-          >
-            Select
-          </button>
+          <lib-sil-button
+            buttonText="Select"
+            finalState="app.consultation.home"
+          ></lib-sil-button>
         </div>
       </div>
     </div>

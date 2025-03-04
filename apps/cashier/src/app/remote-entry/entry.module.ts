@@ -1,19 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 import { CashiersMenuComponent } from '@advantage-lite/cashiers-menu';
 import { SilNavbarComponent } from '@advantage-lite/sil-navbar';
+import { UIRouterModule } from '@uirouter/angular';
+import { CASHIER_STATES } from '../app.states';
 import { RemoteEntryComponent } from './entry.component';
-import { remoteRoutes } from './entry.routes';
 
 @NgModule({
   declarations: [RemoteEntryComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(remoteRoutes),
+    // Replace @angular/router in favor of @uirouter/angular
+    // RouterModule.forChild(remoteRoutes),
+    // RouterModule,
+    UIRouterModule.forChild({ states: CASHIER_STATES }),
     CashiersMenuComponent,
-    RouterModule,
     SilNavbarComponent,
   ],
   providers: [],

@@ -12,19 +12,19 @@ export class ConsultationMenuComponent {
   consultationMenuItems = [
     {
       name: 'Home',
-      link: 'home',
+      state: 'app.consultation.home',
     },
     {
       name: 'Patients',
-      link: 'patients',
+      state: 'app.consultation.patients',
     },
     {
       name: 'Visits',
-      link: 'visits',
+      state: 'app.consultation.visits',
     },
     {
       name: 'Queues',
-      link: 'queues',
+      state: 'app.consultation.queues',
     },
   ];
 }
