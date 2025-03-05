@@ -19,6 +19,10 @@ export default withModuleFederation(
      *   ['app2', 'https://app2.example.com'],
      * ]
      */
+    remotes: [
+      ['cashier', 'http://localhost:3000/cashier'],
+      ['consultation', 'http://localhost:3000/consultation'],
+    ],
   },
   { dts: false }
 );
