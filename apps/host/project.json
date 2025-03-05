@@ -5,6 +5,7 @@
   "prefix": "app",
   "sourceRoot": "apps/host/src",
   "tags": [],
+  "implicitDependencies": ["cashier", "consultation"],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
@@ -96,6 +97,13 @@
         "buildTarget": "host:build",
         "port": 4200,
         "spa": true
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "rm -rf production && mkdir production && cp -r dist/apps/host/* production && cp -r dist/apps/cashier production && cp -r dist/apps/consultation production && serve -p 3000 -s production"
       }
     }
   }
