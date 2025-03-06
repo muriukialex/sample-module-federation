@@ -20,8 +20,8 @@ export default withModuleFederation(
      * ]
      */
     remotes: [
-      ['cashier', 'http://localhost:3000/cashier'],
-      ['consultation', 'http://localhost:3000/consultation'],
+      ['cashier', `${process.env.HOST}/cashier`],
+      ['consultation', `${process.env.HOST}/consultation`],
     ],
   },
   { dts: false }
