@@ -7,7 +7,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Category, UIRouter, UIRouterModule } from '@uirouter/angular';
 import { AppComponent } from './app.component';
 import { APP_STATES } from './app.states';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 export function routerConfigFn(router: UIRouter) {
   router.trace.enable(Category.TRANSITION);
@@ -15,7 +14,7 @@ export function routerConfigFn(router: UIRouter) {
 }
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     /**
