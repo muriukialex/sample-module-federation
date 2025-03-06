@@ -7,41 +7,17 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@nx/angular:webpack-browser",
+      "executor": "@nx/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "outputPath": "dist/libs/communications/communications-home",
-        "polyfills": ["zone.js"],
-        "inlineStyleLanguage": "scss",
-        "styles": ["apps/host/src/styles.scss"],
-        "scripts": []
+        "project": "libs/communications/communications-home/ng-package.json"
       },
       "configurations": {
         "production": {
-          "budgets": [
-            {
-              "type": "initial",
-              "maximumWarning": "500kb",
-              "maximumError": "1mb"
-            },
-            {
-              "type": "anyComponentStyle",
-              "maximumWarning": "4kb",
-              "maximumError": "8kb"
-            }
-          ],
-          "outputHashing": "all",
-          "customWebpackConfig": {
-            "path": "apps/host/webpack.prod.config.ts"
-          }
+          "tsConfig": "libs/communications/communications-home/tsconfig.lib.prod.json"
         },
         "development": {
-          "buildOptimizer": false,
-          "optimization": false,
-          "vendorChunk": true,
-          "extractLicenses": false,
-          "sourceMap": true,
-          "namedChunks": true
+          "tsConfig": "libs/communications/communications-home/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"

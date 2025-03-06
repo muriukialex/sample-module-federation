@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SilNavbarComponent } from '@advantage-lite/sil-navbar';
 import { CommunicationsMenuComponent } from '@advantage-lite/communications-menu';
-import { CommunicationsHomeComponent } from '@advantage-lite/communications-home';
+import { SilNavbarComponent } from '@advantage-lite/sil-navbar';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { RemoteEntryComponent } from './entry.component';
+import { CommunicationsHomeComponent } from '@advantage-lite/communications-home';
 import { UIRouterModule } from '@uirouter/angular';
 import { COMMUNICATIONS_STATES } from '../app.states';
+import { RemoteEntryComponent } from './entry.component';
 
 @NgModule({
   declarations: [RemoteEntryComponent],

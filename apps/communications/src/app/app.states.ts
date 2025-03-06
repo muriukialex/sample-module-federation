@@ -1,8 +1,8 @@
+import { CommunicationsHomeComponent } from '@advantage-lite/communications-home';
 import { PatientsListComponent } from '@advantage-lite/patients-list';
+import { SegmentsListComponent } from '@advantage-lite/segments-list';
 import { Ng2StateDeclaration } from '@uirouter/angular';
 import { RemoteEntryComponent } from './remote-entry/entry.component';
-import { SegmentsListComponent } from '@advantage-lite/segments-list';
-import { CommunicationsHomeComponent } from '@advantage-lite/communications-home';
 
 export const communicationsState = {
   name: 'app.communications',
