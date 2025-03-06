@@ -1,0 +1,17 @@
+{
+  "projects": {},
+  "targets": {
+    "slade-call-center": {
+      "hosting": {
+        "poc-advantage-lite": [
+          "poc-advantage-lite"
+        ],
+        "advantage-lite": [
+          "advantage-lite"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

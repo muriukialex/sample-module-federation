@@ -20,8 +20,10 @@ export default withModuleFederation(
      * ]
      */
     remotes: [
-      ['cashier', `${process.env.HOST}/cashier`],
-      ['consultation', `${process.env.HOST}/consultation`],
+      // ['cashier', `${process.env.HOST}/cashier`],
+      // ['consultation', `${process.env.HOST}/consultation`],
+      ['cashier', `https://poc-advantage-lite.web.app/cashier`],
+      ['consultation', `https://poc-advantage-lite.web.app/consultation`],
     ],
   },
   { dts: false }
