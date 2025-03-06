@@ -47,6 +47,9 @@
       "@advantage-lite/patients-list": [
         "libs/patients/patients-list/src/index.ts"
       ],
+      "@advantage-lite/patients-view": [
+        "libs/patients/patients-view/src/index.ts"
+      ],
       "@advantage-lite/select-app": ["libs/auth/select-app/src/index.ts"],
       "@advantage-lite/sil-interfaces": [
         "libs/shared/sil-interfaces/src/index.ts"
