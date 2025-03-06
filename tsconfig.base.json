@@ -27,6 +27,12 @@
       "@advantage-lite/cashiers-visits": [
         "libs/cashiers/cashiers-visits/src/index.ts"
       ],
+      "@advantage-lite/communications-home": [
+        "libs/communications/communications-home/src/index.ts"
+      ],
+      "@advantage-lite/communications-menu": [
+        "libs/communications/communications-menu/src/index.ts"
+      ],
       "@advantage-lite/consultation-home": [
         "libs/consultation/consultation-home/src/index.ts"
       ],
@@ -50,6 +56,9 @@
       "@advantage-lite/patients-view": [
         "libs/patients/patients-view/src/index.ts"
       ],
+      "@advantage-lite/segments-list": [
+        "libs/communications/segments-list/src/index.ts"
+      ],
       "@advantage-lite/select-app": ["libs/auth/select-app/src/index.ts"],
       "@advantage-lite/sil-interfaces": [
         "libs/shared/sil-interfaces/src/index.ts"
@@ -65,6 +74,9 @@
         "libs/shared/sil-http-services/src/index.ts"
       ],
       "cashier/Module": ["apps/cashier/src/app/remote-entry/entry.module.ts"],
+      "communications/Module": [
+        "apps/communications/src/app/remote-entry/entry.module.ts"
+      ],
       "consultation/Module": [
         "apps/consultation/src/app/remote-entry/entry.module.ts"
       ]

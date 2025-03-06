@@ -6,11 +6,14 @@
     "start": "nx serve host",
     "start:cashier": "NX_DAEMON=false nx serve host --open --devRemotes='cashier'",
     "start:consultation": "nx serve host --open --devRemotes='consultation'",
+    "start:communications": "nx serve host --open --devRemotes='communications'",
     "start-ssr:cashier": "nx serve-ssr cashier --devRemotes='cashier'",
     "start-ssr:consultation": "nx serve-ssr consultation --devRemotes='consultation'",
+    "start-ssr:communications": "nx serve-ssr consultation --devRemotes='communications'",
     "build": "nx run-many --target=build --all",
     "build:cashier": "nx run cashier:build",
     "build:consultation": "nx run consultation:build",
+    "build:communications": "nx run communications:build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
@@ -93,6 +96,7 @@
     "@angular/router": "~19.1.0",
     "@nx/angular": "^20.4.6",
     "@uirouter/angular": "^16.0.0",
+    "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   }
