@@ -33,10 +33,18 @@ export const cashierFutureState = {
   loadChildren: () => import('cashier/Module').then((m) => m.RemoteEntryModule),
 };
 
+export const communicationsFutureState = {
+  name: 'app.communications.**',
+  url: '/communications',
+  loadChildren: () =>
+    import('communications/Module').then((m) => m.RemoteEntryModule),
+};
+
 export const APP_STATES = [
   appState,
   loginState,
   selectAppState,
   consultationFutureState,
   cashierFutureState,
+  communicationsFutureState,
 ];

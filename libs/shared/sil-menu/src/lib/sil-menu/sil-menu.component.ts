@@ -5,6 +5,7 @@ import { UIRouterModule } from '@uirouter/angular';
 @Component({
   selector: 'lib-sil-menu',
   imports: [CommonModule, UIRouterModule],
+  standalone: true,
   templateUrl: './sil-menu.component.html',
   styleUrl: './sil-menu.component.css',
 })

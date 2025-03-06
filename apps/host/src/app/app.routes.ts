@@ -6,6 +6,11 @@ import { Route } from '@angular/router';
 
 export const appRoutes: Route[] = [
   {
+    path: 'communications',
+    loadChildren: () =>
+      import('communications/Module').then((m) => m.RemoteEntryModule),
+  },
+  {
     path: 'consultation',
     loadChildren: () =>
       import('consultation/Module').then((m) => m.RemoteEntryModule),
@@ -14,6 +19,11 @@ export const appRoutes: Route[] = [
     path: 'cashier',
     loadChildren: () =>
       import('cashier/Module').then((m) => m.RemoteEntryModule),
+  },
+  {
+    path: 'communications',
+    loadChildren: () =>
+      import('communications/Module').then((m) => m.RemoteEntryModule),
   },
   {
     path: 'login',
