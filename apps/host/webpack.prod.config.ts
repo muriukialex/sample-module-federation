@@ -9,23 +9,10 @@ import config from './module-federation.config';
 export default withModuleFederation(
   {
     ...config,
-    /*
-     * Remote overrides for production.
-     * Each entry is a pair of a unique name and the URL where it is deployed.
-     *
-     * e.g.
-     * remotes: [
-     *   ['app1', 'https://app1.example.com'],
-     *   ['app2', 'https://app2.example.com'],
-     * ]
-     */
     remotes: [
-      // ['cashier', `${process.env.HOST}/cashier`],
-      // ['consultation', `${process.env.HOST}/consultation`],
-      // ['cashier', `https://poc-advantage-lite.web.app/cashier`],
-      // ['consultation', `https://poc-advantage-lite.web.app/consultation`],
-      ['cashier', `http://localhost:3000/cashier`],
-      ['consultation', `http://localhost:3000/consultation`],
+      ['cashier', `${process.env.HOST}/cashier`],
+      ['consultation', `${process.env.HOST}/consultation`],
+      ['communications', `${process.env.HOST}/communications`],
     ],
   },
   { dts: false }

@@ -47,5 +47,6 @@ Thumbs.db
 
 # env
 *.env
-.env.build.development
-.env.build.production
+.env*
+.env.build.*
+
